@@ -77,7 +77,6 @@ footer {
 li > img {
 	width: 30px;
 	vertical-align: middle;
-	cursor: pointer;
 }
 .to-do-list {
 	background-color: white;
@@ -157,6 +156,9 @@ li > img {
 }
 .list li:hover {
 	background-color: #f0f0f0;
+}
+.list li > img {
+	cursor: pointer;
 }
 .to-do li {
 	color: CornflowerBlue;

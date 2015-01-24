@@ -101,25 +101,9 @@ $(document).ready(function () {
 	});
 
 	/* Reorder tasks */
-	$( '.list ul' ).sortable({ axis: 'y' });
+	$( function () {
+		$( '.list ul.to-do' ).sortable();
+		$( '.list ul.to-do' ).disableSelection();
+	});
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
