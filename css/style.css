@@ -243,6 +243,7 @@ img.archive {
 	font-size: 0.8em;
 	background-color: #f9f9f9;
 	border-radius: 2px;
+	cursor: pointer;
 }
 footer p {
 	margin-bottom: 0.8em;
