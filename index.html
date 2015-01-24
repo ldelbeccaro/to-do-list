@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" href="js/main.js"></script>
+	<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Gentium+Book+Basic:400italic,400:latin', 'Roboto:400,300,500:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+</head>
+<body>
+	<header>
+		<img src="images/checkmark.svg" alt="checkmark">
+		<h1>to do</h1>
+	</header>
+	<section class="to-do-list">
+		<div class="instructions">
+			<h2>Instructions</h2>
+			<ul>
+				<li>Enter a task in the textbox and press enter or click the <img src="images/add.svg" alt="add item"> button to add it to the list</li>
+				<li>Drag tasks to reorder</li>
+				<li>Hide completed tasks using the <img src="images/archive.svg" alt="hide complete item"> button</li>
+			</ul>
+		</div>
+		<div class="list">
+			<form class="form-wrapper cf">
+				<input type="text" placeholder="Add task..."></input>
+				<input class="add" type="submit"></input>
+			</form>
+			<ul class="to-do">
+				<li class="to-do"><img class="check" src="images/to-do.svg" alt="check">Clean kitchen</li>
+				<li class="hover"><img class="check" src="images/to-do.svg" alt="check">Groceries<img class="delete" src="images/delete.svg" alt="delete"></li>
+			</ul>
+			<ul class="complete">
+				<li class="complete"><img class="restore" src="images/restore.svg" alt="restore">Roth IRA contribution</li>
+				<li class="hover-complete"><img class="restore" src="images/restore.svg" alt="restore">Buy coffee table<img class="archive" src="images/archive.svg" alt="archive"></li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<p>By <a href="//lauradelbeccaro.com">Laura Del Beccaro</a></p>
+		<ul class="social">
+			<li><a class="fa fa-github" href="//github.com/ldelbeccaro"><span class="label">GitHub</span></a></li>
+			<li><a class="fa fa-linkedin" href="//linkedin.com/in/lauradelbeccaro"><span class="label">LinkedIn</span></a></li>
+			<li><a class="fa fa-twitter" href="//twitter.com/ldelbeccaro"><span class="label">Twitter</span></a></li>
+			<li><a class="fa fa-envelope" href="mailto:laura@lauradelbeccaro.com"><span class="label">Email</span></a></li>
+		</ul>
+	</footer>
+</body>
+</html>

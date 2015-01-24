@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="25px" height="22px" viewBox="1.25 -2.2 25.0 29.7" version="1.1">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>editor_undo_arrow_outline_stroke</title>
+    <description>Created with Sketch.</description>
+    <defs>
+        <path d="M3.04588218,9.98853508 C3.55649682,4.38751129 8.26586903,0 14,0 C20.0751325,0 25,4.92486745 25,11 C25,16.9570947 20.2646505,21.8081886 14.3527832,21.9944501 L14.3527832,21.9944501 L14.3527832,20.9938934 C19.7122524,20.8080706 24,16.4047641 24,11 C24,5.47715225 19.5228478,1 14,1 C8.87759567,1 4.65474444,4.85144263 4.06930411,9.81647012 L5.59288101,8.29289322 L6.29998779,9 L3.47156067,11.8284271 L0.643133543,9 L1.35024032,8.29289322 L3.04588218,9.98853508 Z" id="path-1"/>
+    </defs>
+    <g id="miu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="editor_undo_arrow_outline_stroke">
+            <use fill="#000000" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"/>
+            <use fill="none" xlink:href="#path-1"/>
+        </g>
+    </g>
+<text x="0.0" y="25.85" font-size="1.1" font-weight="bold" font-family="Helvetica Neue, Helvetica, Arial-Unicode, Arial, Sans-serif" fill="#000000">Created by Pham Thi Dieu Linh</text><text x="0.0" y="26.95" font-size="1.1" font-weight="bold" font-family="Helvetica Neue, Helvetica, Arial-Unicode, Arial, Sans-serif" fill="#000000">from the Noun Project</text></svg>
