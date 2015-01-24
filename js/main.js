@@ -90,14 +90,43 @@ $(document).ready(function () {
 		console.log('Tasks: ' + tasks + '\n Complete: ' + complete + '\n Complete & Hidden: ' + hidden);
 	});
 
-	/* Hide all complete tasks */
+	/* Archive all completed tasks */
 	$( '.hide-tasks' ).click( function ( event ) {
-		$( 'ul.hidden' ).hide();
+		console.log( 'All complete tasks hidden' );
+		$( 'ul.complete' ).find( 'img.archive' ).remove();
+		$( 'ul.hidden' ).append( $( 'ul.complete' ).html() );
+		$( 'ul.complete' ).children().remove();
+		hidden += $( 'ul.hidden' ).length();
+		complete = 0;
+		console.log('Tasks: ' + tasks + '\n Complete: ' + complete + '\n Complete & Hidden: ' + hidden);
 	});
 
 	/* Show hidden tasks */
 	$( '.unhide' ).click( function ( event ) {
 		$( 'ul.hidden' ).show();
+		$( this )
+			.text( 'Hide archived' )
+			.addClass( 'hide-complete' )
+			.removeClass( 'unhide' );
+	});
+
+	/* Hide hidden tasks */
+	$( '.hide-complete' ).click( function ( event ) {
+		$( 'ul.hidden' ).hide();
+		$( this )
+			.text( 'Show archived' )
+			.addClass( 'unhide' )
+			.removeClass( 'hide-complete' );
+	});
+
+	/* Delete all tasks */
+	$( '.delete-all' ).click( function ( event ) {
+		$( 'ul.to-do' ).children().remove();
+		$( 'ul.complete' ).children().remove();
+		$( 'ul.hidden' ).children().remove();
+		tasks = 0;
+		complete = 0;
+		hidden = 0;
 	});
 
 	/* Reorder tasks */

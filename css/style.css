@@ -192,6 +192,18 @@ li > img {
 .hidden {
 	display: none;
 }
+.hide-tasks,
+.unhide,
+.hide-complete,
+.delete-all {
+	width: 29%;
+	padding: 2% 0;
+	margin: 0 2.15%;
+	float: left;
+	font-size: 0.8em;
+	background-color: #f9f9f9;
+	border-radius: 2px;
+}
 footer p {
 	margin-bottom: 0.8em;
 }
