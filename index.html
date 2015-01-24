@@ -5,7 +5,9 @@
 	<title>To Do List</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<script type="text/javascript" href="js/main.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,400|Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Gentium+Book+Basic:400italic,400:latin', 'Roboto:400,300,500:latin' ] }
@@ -36,16 +38,19 @@
 		</div>
 		<div class="list">
 			<form class="form-wrapper cf">
-				<input type="text" placeholder="Add task..."></input>
-				<input class="add" type="submit"></input>
+				<div>
+					<input type="text" placeholder="Add task..."></input>
+					<input class="add" type="submit" value=""></input>
+				</div>
 			</form>
 			<ul class="to-do">
-				<li class="to-do"><img class="check" src="images/to-do.svg" alt="check">Clean kitchen</li>
-				<li class="hover"><img class="check" src="images/to-do.svg" alt="check">Groceries<img class="delete" src="images/delete.svg" alt="delete"></li>
+
 			</ul>
 			<ul class="complete">
-				<li class="complete"><img class="restore" src="images/restore.svg" alt="restore">Roth IRA contribution</li>
-				<li class="hover-complete"><img class="restore" src="images/restore.svg" alt="restore">Buy coffee table<img class="archive" src="images/archive.svg" alt="archive"></li>
+
+			</ul>
+			<ul class="hidden">
+
 			</ul>
 		</div>
 	</section>
