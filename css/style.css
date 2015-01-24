@@ -1,3 +1,4 @@
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol {
 	list-style: none;
 }
 blockquote, q {
@@ -42,7 +43,7 @@ table {
 	border-spacing: 0;
 }
 
-
+/* General */
 body {
 	font-size: 1em;
 	font-family: 'Roboto', 'Helvetica Neue', sans-serif;
@@ -53,13 +54,19 @@ body {
 h1 {
 	font-size: 3em;
 	font-family: 'Gentium Book Basic', serif;
+	color: CornflowerBlue;
 }
 h2 {
 	font-size: 1.3em;
+	font-weight: 500;
 	margin-bottom: 0.5em;
 }
+h3 {
+	font-size: 1.1em;
+	margin: 0.8em 0;
+}
 a {
-	color: #444444;
+	color: CornflowerBlue;
 	text-decoration: none;
 	border-bottom: 1px dotted;
 }
@@ -83,13 +90,12 @@ li > img {
 	padding: 2em;
 }
 .instructions {
-/*	list-style-type: circle; */
-	max-width: 38em;
+	max-width: 39em;
 	margin: 0 auto;
 }
 .instructions li {
 	text-align: left;
-	padding: 0.2em;
+	padding: 0.3em 0;
 }
 .list {
 	width: 30em;
@@ -98,7 +104,7 @@ li > img {
 	border: 3px solid #f5f5f5;
 	border-radius: 3px;
 }
-/*Clearing Floats*/
+/* Clearing floats */
 .cf:before, .cf:after{
 	content:"";
 	display:table;
@@ -147,8 +153,13 @@ li > img {
 	height: 25px;
 	padding: 0;
 }
+/* To do lists */
+.list ul {
+	list-style: none;
+}
 .list li {
 	width: 87%;
+	height: 1.8em;
 	margin: 0 auto;
 	text-align: left;
 	padding: 0.6em;
@@ -157,40 +168,69 @@ li > img {
 .list li:hover {
 	background-color: #f0f0f0;
 }
+.list li > p {
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	top: 15%;
+}
 .list li > img {
 	cursor: pointer;
 }
-.to-do li {
-	color: CornflowerBlue;
-}
-.to-do li img.check {
+img.check {
 	width: 23px;
 	margin-right: 7px;
+	float: left;
 }
-.to-do li.hover img.delete {
+img.delete {
 	display: none;
 	float: right;
 	position: relative;
 }
-.complete li {
-	background-color: #f9f9f9;
-	color: #cccccc;
-	text-decoration: line-through;
-}
-.complete li img.restore {
+img.restore {
 	position: relative;
+	float: left;
 	left: -2px;
 	width: 27px;
 	margin-right: 4px;
 }
-.complete li.hover img.archive {
+img.archive {
 	display: none;
 	float: right;
 	position: relative;
 	top: -0.35em;
 }
+.to-do li {
+	color: CornflowerBlue;
+}
+.complete li {
+	background-color: #f9f9f9;
+	color: #cccccc;
+}
+.complete li > p {
+	margin-left: 35px;
+	position: relative;
+	top: 20%;
+	text-decoration: line-through;
+}
 .hidden {
 	display: none;
+}
+.hidden li {
+	background-color: #f9f9f9;
+	color: #cccccc;
+}
+.hidden li > p {
+	margin-left: 35px;
+	position: relative;
+	top: 20%;
+	text-decoration: line-through;
+}
+.options {
+	width: 100%;
+	margin: 3em auto;
+	position: relative;
+	top: -1.5em;
 }
 .hide-tasks,
 .unhide,
@@ -207,8 +247,12 @@ li > img {
 footer p {
 	margin-bottom: 0.8em;
 }
+.social li {
+	display: inline-block;
+}
 .social a {
 	text-decoration: none;
+	color: #444444;
 	border: 0;
 	border-radius: 50%;
 	width: 2em;
@@ -217,9 +261,6 @@ footer p {
 }
 .social a:hover {
 	background-color: #ffffff;
-}
-.social li {
-	display: inline-block;
 }
 .social span {
 	display:none;
